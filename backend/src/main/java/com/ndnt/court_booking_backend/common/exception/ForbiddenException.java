@@ -1,0 +1,11 @@
+package com.ndnt.court_booking_backend.common.exception;
+
+import org.springframework.http.HttpStatus;
+
+public class ForbiddenException extends ApiException {
+
+    public ForbiddenException(String message) {
+        super(HttpStatus.FORBIDDEN, message);
+    }
+}
+
